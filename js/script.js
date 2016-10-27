@@ -1,10 +1,14 @@
 var coder = function(input) {
-	var shifted = [];
+	debugger;
+	var removed = [];
+	var removed2 = [];
 	input = input.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
 	var length = input.length;
 	if (length <= 4) {
 		var input = input.split("");
-		return input;
+		removed = input.splice(0, 2);
+		removed2 = input.splice(0, 2);
+		return removed2;
 	}
 }
 
